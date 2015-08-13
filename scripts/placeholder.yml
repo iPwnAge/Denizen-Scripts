@@ -1,0 +1,10 @@
+PlaceHolder:
+  type: world
+  debug: false
+  events:
+    on player starts sneaking:
+    - playeffect <p.location> magic_crit qty:10
+    - invisible <player> state:true
+
+    on player stops sneaking:
+    - invisible <player> state:false
